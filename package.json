@@ -1,6 +1,6 @@
 {
-  "name": "@sih-rrt/dbclient",
-  "version": "0.1.0",
+  "name": "@sih-rtt/dbclient",
+  "version": "0.1.1",
   "description": "A minimal database client & schemas for sih-rtt",
   "type": "module",
   "main": "index.ts",
@@ -14,10 +14,7 @@
   },
   "author": "Anmol Sudhir <anmolsudhir.2001@gmail.com>",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sih-rtt/dbclient.git"
-  },
+  "repository": "https://github.com/sih-rtt/dbclient.git",
   "devDependencies": {
     "@types/node": "^20.9.2",
     "dotenv-cli": "^7.3.0",

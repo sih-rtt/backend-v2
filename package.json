@@ -1,7 +1,7 @@
 {
-  "name": "@sih-rrt/prisma-sih",
-  "version": "1.0.0",
-  "description": "A minimal prisma client for sih-rtt",
+  "name": "@sih-rrt/dbclient",
+  "version": "0.1.0",
+  "description": "A minimal database client & schemas for sih-rtt",
   "type": "module",
   "main": "index.ts",
   "scripts": {
@@ -12,11 +12,14 @@
   "author": "Anmol Sudhir <anmolsudhir.2001@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.9.2",
     "dotenv-cli": "^7.3.0",
     "prisma": "^5.6.0",
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@prisma/client": "^5.6.0"
+    "@prisma/client": "^5.6.0",
+    "redis": "^4.6.10",
+    "redis-om": "^0.4.3"
   }
 }

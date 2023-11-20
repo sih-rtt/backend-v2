@@ -4,9 +4,7 @@ This is an internal package that provides custom generated prisma client and a r
 
 > **Important!** : @types/node is an important dependency for this package.\
 > To install this package run:
-> ```bash
-npm install --save-dev @types/node
-> ```
+> ```npm install --save-dev @types/node```
 
 ### Installation
 

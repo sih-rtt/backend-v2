@@ -15,7 +15,7 @@
   "author": "Anmol Sudhir <anmolsudhir.2001@gmail.com>",
   "license": "ISC",
   "repository": {
-    "type": "github",
+    "type": "git",
     "url": "https://github.com/sih-rtt/dbclient.git"
   },
   "devDependencies": {

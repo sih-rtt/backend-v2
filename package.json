@@ -9,6 +9,9 @@
     "db:generate": "dotenv -- prisma generate",
     "postinstall": "npx tsc && cp src/index.d.ts dist/index.d.ts && npx prisma@5.6.0 generate"
   },
+  "publishConfig": {
+    "@sih-rtt:registry": "https://npm.pkg.github.com"
+  },
   "author": "Anmol Sudhir <anmolsudhir.2001@gmail.com>",
   "license": "ISC",
   "devDependencies": {

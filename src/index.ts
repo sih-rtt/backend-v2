@@ -1,7 +1,6 @@
 import { PrismaClient } from '@prisma/client';
-import redis from './redis';
 import { Client, RedisRepository } from './index.d';
-import { busRepo, busStopRepo, suggestRepo, conductorRepo, riderRepo } from './redis';
+import redis, { busRepo, busStopRepo, suggestRepo, conductorRepo, riderRepo } from './redis.js';
 
 const prisma = new PrismaClient();
 

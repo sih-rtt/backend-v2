@@ -3,7 +3,8 @@
   "version": "0.1.1",
   "description": "A minimal database client & schemas for sih-rtt",
   "type": "module",
-  "main": "index.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
     "db:generate": "dotenv -- prisma generate",

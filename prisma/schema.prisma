@@ -96,16 +96,17 @@ model User {
 }
 
 model Route {
-  id            String            @id @default(cuid())
-  refId         BigInt            @unique
+  id            String                                @id @default(cuid())
+  refId         BigInt                                @unique
   from          String?
   fromLocation  Unsupported("geometry(POINT, 4326)")?
   to            String?
   toLocation    Unsupported("geometry(POINT, 4326)")?
+  polyline      String                                @db.Text
   busStops      BusStopsInRoute[]
   sessions      Session[]
-  busesOnTouteA CombinedRoute[]   @relation(name: "routeA")
-  busesOnRouteB CombinedRoute[]   @relation(name: "routeB")
+  busesOnTouteA CombinedRoute[]                       @relation(name: "routeA")
+  busesOnRouteB CombinedRoute[]                       @relation(name: "routeB")
 
   @@index(fields: [id], type: BTree)
 }
@@ -124,8 +125,11 @@ model CombinedRoute {
 
 model BusStopsInRoute {
   id           String  @id @default(cuid())
+  index        Int
   busStopRefId BigInt
   busStop      BusStop @relation(fields: [busStopRefId], references: [refId])
   routeRefId   BigInt
   route        Route   @relation(fields: [routeRefId], references: [refId])
+
+  @@unique(fields: [busStopRefId, routeRefId, index])
 }

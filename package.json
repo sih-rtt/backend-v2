@@ -1,6 +1,6 @@
 {
   "name": "@sih-rtt/dbclient",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A minimal database client & schemas for sih-rtt",
   "type": "module",
   "main": "./dist/index.js",

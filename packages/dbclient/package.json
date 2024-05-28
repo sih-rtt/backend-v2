@@ -1,0 +1,30 @@
+{
+  "name": "@sih-rtt/dbclient",
+  "version": "0.1.3",
+  "description": "A minimal database client & schemas for sih-rtt",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "install": "npx tsx",
+    "db:generate": "dotenv -- prisma generate",
+    "postinstall": "npx tsc && cp src/index.d.ts dist/index.d.ts && npx prisma@5.6.0 generate"
+  },
+  "publishConfig": {
+    "@sih-rtt:registry": "https://npm.pkg.github.com"
+  },
+  "author": "Anmol Sudhir <anmolsudhir.2001@gmail.com>",
+  "license": "ISC",
+  "repository": "https://github.com/sih-rtt/dbclient.git",
+  "devDependencies": {
+    "@types/node": "^20.9.2",
+    "dotenv-cli": "^7.3.0",
+    "prisma": "^5.6.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.6.0",
+    "redis": "^4.6.10",
+    "redis-om": "^0.4.3"
+  }
+}

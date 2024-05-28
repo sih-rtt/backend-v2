@@ -6,7 +6,7 @@ This is an internal package that provides custom generated prisma client and a r
 > To install this package run:
 > ```npm install --save-dev @types/node```
 
-### Installation
+## Installation
 
 Install this package by running:
 
@@ -22,6 +22,7 @@ Hence there is no need to have prisma/prisma client/redis/redis-om pre-installed
 ### Usage
 
 Import the clients:
+
 ```javascript
 import { customClients } from '@sih-rtt/dbclient/dist';
 ```
@@ -38,11 +39,13 @@ const redis = customClients.redis;
 ```
 
 Import redis repositories:
+
 ```javascript
 import { redisRepositories } from '@sih-rtt/dbclient/dist';
 ```
 
 Access redis repositories:
+
 ```javascript
 const {
   busRepo,

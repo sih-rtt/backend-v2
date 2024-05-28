@@ -4,7 +4,7 @@ import { seedBusRoutes } from './bus-routes.js';
 import { seedCombinedBusRoutes } from './combined-routes.js';
 import { seedBus } from './bus.js';
 import { seedCompletePg, truncatePgTables } from './main.js';
-import { customClients } from '@sih-rtt/dbclient';
+import { customClients } from '@repo/dbclient';
 
 const { prisma } = customClients;
 
